@@ -1,6 +1,7 @@
 import { User } from 'components/User/User'
 import { UsersList  } from 'components/UsersList/UsersList';
 import { Section } from 'components/Section/Section';
+import   Counter  from 'components/Counter/Counter'
 import { users } from 'data/user';
 import { GlobalStyles } from 'utils/GlobalStyle';
 
@@ -16,6 +17,7 @@ export const App = () => {
       <UsersList users={users} />
     </Section>
     <GlobalStyles />
+    <Counter initialValue={10}/>
     </>
   );
 };
