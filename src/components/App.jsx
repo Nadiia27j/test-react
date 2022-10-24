@@ -2,8 +2,9 @@ import { User } from 'components/User/User'
 import { UsersList  } from 'components/UsersList/UsersList';
 import { Section } from 'components/Section/Section';
 import { users } from 'data/user';
+import { GlobalStyles } from 'utils/GlobalStyle';
+
 const { name, email } = users[0];
-import { GlobalStyle } from 'utils/GlobalStyles'
 
 export const App = () => {
   return (
@@ -11,10 +12,10 @@ export const App = () => {
     <Section>
       <User name={name} email={email} />
     </Section>
-    <Section>
+    <Section title="list of users">
       <UsersList users={users} />
     </Section>
-    <GlobalStyle />
+    <GlobalStyles />
     </>
   );
 };

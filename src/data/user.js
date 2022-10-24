@@ -229,4 +229,4 @@ export const users = [
         bs: 'target end-to-end models'
       }
     }
-  ]
+]

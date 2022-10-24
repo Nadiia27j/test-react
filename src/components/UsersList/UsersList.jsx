@@ -18,5 +18,5 @@ UsersList.propTypes = {
       email: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
     })
-    ),
+    ).isRequired
 }; 
